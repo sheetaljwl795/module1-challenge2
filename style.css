@@ -9,8 +9,7 @@
     background-image: url(images/tree.jpg);
     background-size: cover;
     background-position: center;
-    text-align: center;
-    color: white;
+    
 }
 
 /* Styling the navigation bar */
@@ -60,10 +59,7 @@
 }
 
 .webimage {    
-    background-color: #aaa;
-    width: 100%;
     padding: 10px;
-    object-fit: cover;
 }
   
 /* Main column */
@@ -73,8 +69,14 @@
     padding: 20px;
 }
 
+.project {
+    background-color: beige;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
     .content, .navbar {   
       flex-direction: column;
     }
