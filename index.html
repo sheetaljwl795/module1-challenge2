@@ -4,46 +4,107 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Sheetal Jawale Portfolio</title>
+    <title>Welcome to Sheetal Jawale's Software Portfolio </title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+   
 </head>
 <body>
-    <!-- Sidebar/Menu-->
-    <nav class="sidebar">
-        <div class="sidebar-c1">
-            <a href="#" onclick="" class="sidebar-c2"></a>
-            <img src=">;
+   <!-- Header -->
+   <div class ="header">
+        <h1>Sheetal's Portfolio</h1>
+        <p>Learning Web Development</p>
+    </div>
 
+    <!-- Navigation Bar -->
+    <div class="navbar">
+            <a href ="#home">Home</a>
+            <a href ="#aboutme">About Me</a>
+            <a href ="#skills">Skills</a>
+            <a href ="#portfolio">Portfolio</a>            
+            <a href ="#contact">Contact Me</a>
+    </div>
+
+<!-- Flexible Grid -->
+<div class="content">
+
+    <div class="side" id="aboutme">
+        <h2>About Me</h2>
+        <h5>Sheetal Sheetal</h5>
+        <div class="webimage" style="height:220px;">
+        <img src="images/webdev.jpg" alt="Profile Photo">
+        </div>
+        <p>I am a full stack engineer, developing webservies with a responsive design.</p>
+        
+        <br>
+     
+        <div id="skills">
+            <h3 >Technical Skills</h3>
+            <div class="main-topics">
+                <p>HTML</p>
+                <div class="progress" style="height:24px;width:95%">95%</div>
+            </div>
+            <div class="main-topics">
+                <p>CSS</p>
+                <div class="progress" style="height:24px;width:75%">75%</div>
+            </div>
+            <div class="main-topics">
+                <p>JavaScript</p>
+                <div class="progress" style="height:24px;width:50%">50%</div>
+            </div>
         </div>
 
+        <br><br><br><br>
+        
+        <!--Contact-->
+        <div id="contact">
+            <h1> Contact</h1>
+            <form action="" class="form">
+                <input type="text" name="name" class="input" 
+                placeholder="Enter your Name">
 
+                <input type="email" name="email" class="input" 
+                placeholder="Enter your email">
 
-    </nav>
+                <input type="Submit" value="SEND" id="send">
+            </form>
+        </div>
 
-    <div>
-        <p>Overlay effect when opening sidebar on small screens</p>
     </div>
 
-    <div>
-        <p>PAGE CONTENT</p>
+    <div class="main" id="portfolio">
+
+        <h2>Web Design</h2>
+        <h6>This design is wonderful, awesome, and really cool.</h6>
+        <div class="webimage">
+            <a target="_blank" href="images/webdesign.jpg">
+            <img src="images/webdesign.jpg" alt="webdesign">
+            </a>
+        </div>
+
+        <h2>Web Development</h2>
+        <h6>This wesbite is wonderful, awesome, and really cool.</h6>
+        <div class="webimage">
+            <a target="_blank" href="images/webdesign.jpg">
+            <img src="images/webdesign.jpg" alt="webdesign">
+            </a>
+        </div>
+
+        <h2>Web Development</h2>
+        <h6>This wesbite is wonderful, awesome, and really cool.</h6>
+        <div class="webimage">
+            <a target="_blank" href="images/webdesign.jpg">
+            <img src="images/webdesign.jpg" alt="webdesign">
+            </a>
+        </div>
+
     </div>
+</div>
 
-    <header>
-        <p>Header</p>
-    </header>
+<!--Footer-->
+<footer>
+    <p>@Copyright to Sheetal<br>
+</footer>
 
-    <div>
-        <p>Photo Grid</p>
-    </div>
-
-    <div>
-        <p>Contact Section</p>
-    </div>
-
-    <footer>
-        <p>Footer</p>
-    </footer>
-
-    
 </body>
-</html>
+</html>   

@@ -1,16 +1,130 @@
 * {
-   font-family: "Roboto", 'Times New Roman', serif, sans-serif; 
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
-body {
-   max-width: 1600px;
+/* Styling the Header */
+.header {
+    padding: 10px;
+    background-image: url(images/tree.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
 }
 
-.sidebar {
-   height:100%;
-   width:200px;
-   background-color:#fff;
-   position:fixed!important;
-   z-index:1;
-   overflow:auto;
+/* Styling the navigation bar */
+.navbar {
+    display: flex;
+    background-color: #333;
+}
+  
+/* Styling the navigation bar links */
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+  
+/* Changing color on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Column container */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+
+.main-topics {
+    text-align:left;
+    margin: 2px;    
+}
+
+.progress {
+    color: white;
+    background-color:gray;
+    text-align: center;
+    padding: 3px;
+}
+
+.webimage {    
+    background-color: #aaa;
+    width: 100%;
+    padding: 10px;
+    object-fit: cover;
+}
+  
+/* Main column */
+.main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .content, .navbar {   
+      flex-direction: column;
+    }
+}
+
+
+/* Contact*/
+#contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        box-sizing: border-box;
+        padding: 0px;
+        background-color: lightgrey; 
+        text-align: left;         
+}
+
+.form {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        margin: 5px 0px;        
+}
+
+.input {
+        padding:12px;
+        margin:8px;
+        border: none;
+        outline: none;
+}
+    
+#send {
+    width: 10vw; 
+    background-color: green;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    margin: 5px 5px;
+    cursor: pointer;
+    border: none;
+}
+
+#send:hover {
+        cursor: pointer;
+        background-color: blue;
+}
+
+/* Footer*/    
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: lightgray;
 }
