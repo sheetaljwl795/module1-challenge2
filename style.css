@@ -89,8 +89,8 @@
         flex-direction: column;
         justify-content: space-evenly;
         box-sizing: border-box;
-        padding: 0px;
-        background-color: lightgrey; 
+        padding: 10px;
+        background-color:lightgray; 
         text-align: left;         
 }
 
