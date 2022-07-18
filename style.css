@@ -59,7 +59,12 @@
 }
 
 .webimage {    
-    padding: 10px;
+    padding: 10px 60px;
+    transition: transform .2s;
+}
+
+.webimage:hover {
+    transform: scale(1.15); 
 }
   
 /* Main column */
