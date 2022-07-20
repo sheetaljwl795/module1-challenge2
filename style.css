@@ -82,6 +82,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 25px;
+}
+
+.project-image:hover {
+    transform: scale(1.15); 
 }
 /* Main column */
 .main {
@@ -98,6 +103,13 @@ body{
     flex-direction: row;
 
 }
+
+.project-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media screen and (max-width:1000px){
     .project{
         flex-direction: column;
@@ -109,11 +121,10 @@ body{
     .content, .navbar {   
       flex-direction: column;
     }
-    .main, .side {
+    /*.main, .side {
         width: 100%;
-    }
+    }*/
 }
-
 
 /* Contact*/
 #contact {
